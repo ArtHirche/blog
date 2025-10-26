@@ -1,0 +1,25 @@
+:root {
+  /* verdes */
+  --green-100: #e8fef2;
+  --green-200: #bff4d8;
+  --green-500: #00c853; /* primary */
+  --green-600: #00b74a;
+
+  /* texto */
+  --text-color: #e6ffef;
+
+  /* backgrounds */
+  --bg-900: #000000;
+}
+
+body {
+  background: var(--bg-900);
+  color: var(--text-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
