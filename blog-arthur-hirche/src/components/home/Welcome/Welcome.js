@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../../styles/theme.css";
 import "./Welcome.css";
 
@@ -6,17 +7,17 @@ export default function Welcome() {
   return (
     <main className="welcome-root">
       <div className="welcome-card">
-        <h1 className="welcome-title typewriter">Bem-vindo ao meu Blog!!!</h1>
+        <h1 className="welcome-title typewriter">Bem-vindo(a) ao meu Blog!</h1>
         <p className="welcome-sub glow-text">
           Conteúdo sobre desenvolvimento, design e minha vida.
         </p>
         <div className="welcome-actions">
-          <a className="btn btn-primary neon-button" href="#posts">
+          <Link to="/blog" className="btn btn-primary neon-button">
             Entrar no blog
-          </a>
-          <a className="btn btn-ghost neon-button-ghost" href="#sobre">
+          </Link>
+          <Link to="/sobre" className="btn btn-ghost neon-button-ghost">
             Sobre mim
-          </a>
+          </Link>
         </div>
       </div>
       <footer className="welcome-footer">
